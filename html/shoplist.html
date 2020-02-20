@@ -22,6 +22,7 @@
 
         .navbar{
             margin-bottom: 0;
+            border: none;
         }
 
         .navbar-brand{
@@ -31,42 +32,59 @@
             background-color: white;
         }
 
+        .navbar-toggle{
+            background-color: #009688;
+            margin-right: 8px;
+            margin-left: 12px;
+            padding: 8px 6px;
+        }
+        .navbar-toggle .icon-bar{
+            background-color: white;
+        }
+        .navbar-collapse{
+            padding: 0;
+        }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navphone" style="display: none;background-color: black;">
-    <div class="container-fluid">
+
+
+<nav class="navbar  navphone"  style="display: none" >
+
+    <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header"  style="display: flex;padding: 1rem 1rem 0.3rem 1rem">
+            <a class="navbar-brand" href="#"><img src="../images/head1.png" style="height:50px;width: 100%"></a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#" style="display: flex"><img src="../images/LOGO.png" style="height:50px;margin-left:10px"><h2 style="font-size: 2.5rem;font-weight: 1000; margin-top: 13px;font-family: 'Arial Black';color: white">重庆万源佳药业</h2></a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: absolute;background-color: white;width: 100%">
             <ul class="nav navbar-nav">
-                <li style="padding: 10px"><a href="#">关于我们 <span class="sr-only">(current)</span></a></li>
-                <li style="padding: 10px"><a href="#">产品系列</a></li>
-                <li style="padding: 10px"><a href="#">认识酵素</a></li>
-                <li style="padding: 10px"><a href="#">联系我们</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="../images/1.png" style="width:30px;"></a></li>
+                <li class="active" style="padding: 5px;border-bottom: 1px solid grey;border-top:  1px solid black;text-align: center" ><a href="../index.html">首页</a></li>
+                <li style="padding: 15px 0;border-bottom: 1px solid grey;"><a href="about.html">关于我们 <span class="sr-only">(current)</span></a></li>
+                <li style="padding: 10px;border-bottom: 1px solid grey;"><a href="shoplist.html"><div style="background-color: #009688;padding: 10px;width: 50%;margin-left: 25%;color: white">产品系列</div></a></li>
+                <li style="padding: 10px;border-bottom: 1px solid grey;"><a href="know.html">认识酵素</a></li>
+                <li style="padding: 10px;border-bottom: 1px solid grey;"><a href="contact.html">联系我们</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
+
 </nav>
+
 <div class="container topnav" >
     <!--    头部-->
     <header  class="center-block">
         <img  src="../images/header.png" class="img-responsive top" alt="Responsive image"></img>
     </header>
+
 
 
 
@@ -89,29 +107,30 @@
 <div  style="background-color: #F1F2EC ">
 <div class="container">
    <div class="row"  style="margin:5rem  0">
-       <div class="col-md-3 col-sm-3">
-           <a href="shop1.html">
-               <img  src="../images/shop1.png" style="width: 100%;margin-top: 1rem"></img>
-           </a>
-       </div>
-
-       <div class="col-md-3 col-sm-3">
-           <a href="shop2.html">
-           <img  src="../images/shop2.png"  style="width: 100%;margin-top: 1rem"></img>
-           </a>
-       </div>
-
-       <div class="col-md-3 col-sm-3">
+       <div class="col-md-3  col-xs-6">
            <a href="shop3.html">
-           <img  src="../images/shop.png"  style="width: 100%;margin-top: 1rem"></img>
+               <img  src="../images/shop.png"   style="width: 100%;margin-top: 1rem"></img>
            </a>
        </div>
 
-       <div class="col-md-3 col-sm-3">
+       <div class="col-md-3  col-xs-6">
            <a href="shop4.html">
-           <img  src="../images/shop3.png"  style="width: 100%;margin-top: 1rem"></img>
+               <img  src="../images/shop3.png"     style="width: 100%;margin-top: 1rem"></img>
            </a>
        </div>
+       <div class="col-md-3 col-xs-6">
+           <a href="shop1.html">
+               <img  src="../images/shop1.png"  style="width: 100%;margin-top: 1rem"></img>
+           </a>
+       </div>
+
+       <div class="col-md-3  col-xs-6">
+           <a href="shop2.html">
+               <img  src="../images/shop2.png"   style="width: 100%;margin-top: 1rem"></img>
+           </a>
+       </div>
+
+
    </div>
 
 

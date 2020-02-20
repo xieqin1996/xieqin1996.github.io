@@ -22,6 +22,7 @@
 
         .navbar{
             margin-bottom: 0;
+            border: none;
         }
 
         .navbar-brand{
@@ -31,42 +32,60 @@
             background-color: white;
         }
 
+        .navbar-toggle{
+            background-color: #009688;
+            margin-right: 8px;
+            margin-left: 12px;
+            padding: 8px 6px;
+        }
+        .navbar-toggle .icon-bar{
+            background-color: white;
+        }
+        .navbar-collapse{
+            padding: 0;
+        }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navphone" style="display: none;background-color: black;">
-    <div class="container-fluid">
+
+
+<nav class="navbar  navphone"  style="display: none" >
+
+    <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header"  style="display: flex;padding: 1rem 1rem 0.3rem 1rem">
+            <a class="navbar-brand" href="#"><img src="../images/head1.png" style="height:50px;width: 100%"></a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#" style="display: flex"><img src="../images/LOGO.png" style="height:50px;margin-left:10px"><h2 style="font-size: 2.5rem;font-weight: 1000; margin-top: 13px;font-family: 'Arial Black';color: white">重庆万源佳药业</h2></a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: absolute;background-color: white;width: 100%">
             <ul class="nav navbar-nav">
-                <li style="padding: 10px"><a href="#">关于我们 <span class="sr-only">(current)</span></a></li>
-                <li style="padding: 10px"><a href="#">产品系列</a></li>
-                <li style="padding: 10px"><a href="#">认识酵素</a></li>
-                <li style="padding: 10px"><a href="#">联系我们</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="../images/1.png" style="width:30px;"></a></li>
+                <li class="active" style="padding: 5px;border-bottom: 1px solid grey;border-top:  1px solid black;text-align: center" ><a href="../index.html">首页</a></li>
+                <li style="padding: 15px 0;border-bottom: 1px solid grey;"><a href="about.html">关于我们 <span class="sr-only">(current)</span></a></li>
+                <li style="padding: 10px;border-bottom: 1px solid grey;"><a href="shoplist.html">产品系列</a></li>
+                <li style="padding: 10px;border-bottom: 1px solid grey;"><a href="know.html"><div style="background-color: #009688;padding: 10px;width: 50%;margin-left: 25%;color: white">认识酵素</div></a></li>
+                <li style="padding: 10px;border-bottom: 1px solid grey;"><a href="contact.html">联系我们</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
+
 </nav>
+
 <div class="container topnav" >
     <!--    头部-->
     <header  class="center-block">
         <img  src="../images/header.png" class="img-responsive top" alt="Responsive image"></img>
     </header>
+
+
 
 
 
@@ -90,47 +109,59 @@
 
 <div class="container" style="padding-bottom: 20rem">
     <div class="row" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
-        <div class="col-md-4 col-sm-4">
-            <a href="#" class="thumbnail">
+
+        <div class="col-md-4 col-xs-4">
+            <a  href="what.html" class="thumbnail">
                 <img src="../images/2.png" alt="...">
             </a>
         </div>
-         <div class="col-md-8 col-sm-8" style="text-align: left;">
-             <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0">什么是酵素？</h2>
-             <p style="line-height: 3rem">酵素是由氨基组成的具有特殊生物活性的物质，也称为酶，是一种生物催化剂，它存在于所有活动的动、
+         <div class="col-md-8 col-xs-8" style="text-align: left;">
+             <a href="what.html">
+             <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0"  class="hh1">什么是酵素？</h2>
+             <p style="line-height: 3rem" class="p1">酵素是由氨基组成的具有特殊生物活性的物质，也称为酶，是一种生物催化剂，它存在于所有活动的动、
                  植物和微生物体内，是维持机体正常功能，消化食物，修复组织等生命活动的一种必要物质。几乎参与
                  所有生命过程，甚至是大脑的思考，自然界的生命衍繁息，肉眼不可见的酵素，正是这一切幕后的导演和编剧。</p>
+             </a>
          </div>
+
     </div>
 
 
     <div class="row" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
-        <div class="col-md-4 col-sm-4">
-            <a href="#" class="thumbnail">
+
+        <div class="col-md-4 col-xs-4">
+            <a href="can.html" class="thumbnail">
                 <img src="../images/4.png" alt="...">
             </a>
         </div>
-        <div class="col-md-8 col-sm-8" style="text-align: left;">
-            <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0">如何选择酵素好坏？</h2>
-            <p style="line-height: 3rem">国内食用酵素的人群越来越多。但市场上的酵素品种繁多，品质也参差不齐。究竟什么样的酵素才是好酵素？
+        <div class="col-md-8 col-xs-8" style="text-align: left;">
+            <a href="can.html">
+            <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0" class="hh1">如何选择酵素好坏？</h2>
+            <p style="line-height: 3rem" class="p1">国内食用酵素的人群越来越多。但市场上的酵素品种繁多，品质也参差不齐。究竟什么样的酵素才是好酵素？
                 有哪些标准可以作为选择的依据呢？
                 1、正常人体大约有4000-5000种酵素，对于人体补充酵素来说，多种原料能满足更多需求。佳联酵素精选当季</p>
+            </a>
         </div>
+
     </div>
 
 
     <div class="row" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
-        <div class="col-md-4 col-sm-4">
-            <a href="#" class="thumbnail">
+
+        <div class="col-md-4 col-xs-4">
+            <a href="why.html" class="thumbnail">
                 <img src="../images/3.png" alt="...">
             </a>
         </div>
-        <div class="col-md-8 col-sm-8" style="text-align: left;">
-            <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0">为什么选择万源佳？</h2>
-            <p style="line-height: 3rem">万源佳酵素的独到之处，在于采集酉阳山区珍稀的野生猕猴桃、刺梨、桑葚……等为发酵原材。天生地养的纯净野果
+        <div class="col-md-8 col-xs-8" style="text-align: left;">
+            <a href="why.html">
+            <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0 " class="hh1">为什么选择万源佳？</h2>
+            <p style="line-height: 3rem"  class="p1">万源佳酵素的独到之处，在于采集酉阳山区珍稀的野生猕猴桃、刺梨、桑葚……等为发酵原材。天生地养的纯净野果
                 ，风味纯正/养分无减/品性不变。无农残、无污染，方可放心全果利用，充分吸纳原材茎、叶、皮的稀有养分。
                 发酵熟成后，核心活性成分——SOD(超氧歧化酶)含量远高于普通果蔬发酵产品。</p>
+            </a>
         </div>
+
     </div>
 </div>
 
@@ -194,6 +225,8 @@
             $(".tebie").css("font-size","1.3rem")
             $(".navphone").css("display","block")
             $(".topnav").css("display","none")
+            $(".hh1").css({"margin":"20px 0 10px 0","font-size":"1px"})
+            $(".p1").css({"line-height":"20px","font-size":"10px","height":"55px",'overflow':"hidden"})
         } else {
             console.log(("电脑"))
         }
