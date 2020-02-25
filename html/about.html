@@ -8,6 +8,10 @@
     <!-- 声明文档使用的字符编码 -->
     <title>酵素</title>
     <style>
+        .container {
+            max-width: 950px;
+        }
+
         .thumbnail{
             border-radius: 0;
         }
@@ -54,7 +58,7 @@
     <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header"  style="display: flex;padding: 1rem 1rem 0.3rem 1rem">
-            <a class="navbar-brand" href="#"><img src="../images/head1.png" style="height:50px;width: 100%"></a>
+            <a class="navbar-brand" href="#"><img src="../images/head1.png" style=" height: 4.3rem;width: 100%"></a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -80,7 +84,7 @@
 <div class="container topnav" >
     <!--    头部-->
     <header  class="center-block">
-        <img  src="../images/header.png" class="img-responsive top" alt="Responsive image"></img>
+        <img  src="../images/header.png" style="width: 45%" class="img-responsive top" alt="Responsive image"></img>
     </header>
 
 
@@ -105,7 +109,7 @@
 
 <div class="container">
     <div style="text-align: left;">
-        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0">重庆万源佳药业有限公司</h2>
+        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0" class="t2e">重庆万源佳药业有限公司</h2>
         <p style="line-height: 3rem">成立于2014年，是一家集研发、种植、生产加工、销售为一体的综合性现代化企业，主要生产药食同源酵素等系列产品。<br>
             公司先后被评为：重庆市林业产业化龙头企业、农业产业化市级龙头企业、精准扶贫先进单位。<br>
             公司坐落于重庆酉阳板溪工业园区，毗邻国家5A级景区桃花源，拥有核心基地10000余亩。得天独厚的地理位置孕育出物产丰富的野生资源为公司生产高品质养生品提供了物质保障。<br>
@@ -117,7 +121,7 @@
     </div>
 
     <div style="text-align: left;">
-        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0">公司荣誉</h2>
+        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0"  class="t2e">公司荣誉</h2>
 <!--        <div class="row">-->
 <!--            <div class="col-xs-6 col-md-4">-->
 <!--                <a href="#" class="thumbnail">-->
@@ -142,13 +146,13 @@
 
 
     <div style="text-align: left;">
-        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0">公司资质</h2>
+        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0" class="t2e">公司资质</h2>
         <img src="../images/sort1.png" class="img-responsive" alt="Responsive image" style="width: 100%">
     </div>
 
 
     <div style="text-align: left;margin-bottom: 5rem" >
-        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0">公司视频</h2>
+        <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0" class="t2e">公司视频</h2>
         <div class="embed-responsive embed-responsive-16by9" >
 
 <!--            <iframe src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  -->
@@ -157,7 +161,7 @@
 
             <video width="100%" controls>
 
-                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+                <source src="../vidio/WeChat_20200224171143.mp4" type="video/mp4">
 
         </div>
     </div>
@@ -222,6 +226,7 @@
             $(".tebie").css("font-size","1.3rem")
             $(".navphone").css("display","block")
             $(".topnav").css("display","none")
+            $(".t2e").css({"font-size":" 1.5rem","margin":"3rem 0 1rem 0"})
         } else {
             console.log(("电脑"))
         }
