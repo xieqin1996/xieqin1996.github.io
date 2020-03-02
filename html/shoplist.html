@@ -39,27 +39,32 @@
 
         .navbar-toggle{
             background-color: #009688;
-            margin-right: 8px;
+            margin-right: 0px;
             margin-left: 12px;
-            padding: 8px 3px;
+            padding: 5px 1px;
         }
         .navbar-toggle .icon-bar{
             background-color: white;
+            width: 20px;
         }
         .navbar-collapse{
             padding: 0;
         }
 
         .col-md-3,.col-xs-6{
-            padding: 1rem;
+            padding: 0.2rem;
         }
         a.lianjie .da{
             width: 100%;
-            height: 25rem;
+            height: 23rem;
             border: none;
         }
         a.lianjie:hover .da{
           border: 4px solid white;
+        }
+
+        .breadcrumb>li+li:before{
+            content: "";
         }
     </style>
 </head>
@@ -67,7 +72,7 @@
 
 
 
-<nav class="navbar  navphone"  style="display: none" >
+<nav class="navbar  navphone navbar-fixed-top"  style="display: none;background-color: white" >
 
     <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -109,8 +114,8 @@
 
 
     <!--导航条-->
-    <ul class="nav nav-pills">
-        <li style="margin-right:60px "><a href="../index.html" >首页</a></li>
+    <ul class="nav nav-pills" style="margin-left: 80px">
+        <li style="margin-right:40px "><a href="../index.html" >首页</a></li>
         <li><a href="about.html">关于我们</a></li>
         <li  class="active" ><a href="shoplist.html">产品系列</a></li>
         <li><a href="know.html">认识酵素</a></li>
@@ -120,12 +125,22 @@
 </div>
 
 
-<img src="../images/banner3.png" class="img-responsive" style="width: 100%">
+<ol class="breadcrumb s2" style="text-align: left;background-color:#F1F2EC;padding-top: 40px;padding-left: 0;margin-bottom: 0;display: none">
+    <li><a class="bb active" style="text-decoration: none;color: #C6A97D" >当前位置<text style="margin-left: 10px">/首页</text>  </a></li>
+    <li><a href="about.html"  class="bb" style="text-decoration: none;color: black">  >产品系列</a></li>
+</ol>
+
+
+
+<img src="../images/q1.png" class="img-responsive b1" style="width: 100%">
+<img src="../images/q2.png" class="img-responsive b2" style="width: 100%;display: none">
+
+
 <div  style="background-color: #F1F2EC ">
 <div class="container">
     <h3 style="color: black;font-size: 3rem" class="titl">畅销产品</h3>
-    <h5 style="color: #82B7A9;font-size: 0.5rem;margin: 1rem auto">FACTORY  <img src="../images/叶子蓝色.png" style="width: 15px"> & FARM</h5>
-    <h2 style="color: black;font-size: 1.7rem" class="erji tebie">来自原始山野的"源"能量</h2>
+    <h5 style="color: #82B7A9;font-size: 0.5rem;margin: 1rem auto">FACTORY  <img src="../images/叶子蓝色.png" style="width: 10px"> & FARM</h5>
+    <h2 style="color: black;font-size: 1.7rem;margin-top: 10px" class="erji tebie">来自原始山野的"源"能量</h2>
 
 
     <div class="row"  style="margin:2rem  0">
@@ -190,12 +205,22 @@
     </div>
 </div>
 </div>
+
+
+
+
+<div class="fangda" style="position: fixed;background-color: black;opacity: 0.9;top: 0;bottom: 0;right: 0;left: 0;z-index: 100;display: none">
+    <img src="../images/二维码.jpg" width="150px" style="margin: 20%">
+</div>
+
+
+
 <!--底部-->
 <div class="foot" style="background-color: black;color: white;padding-top: 30px;padding-bottom: 30px">
     <div class="container foot1">
         <div class="row">
             <div class="col-md-4 col-xs-5" style="text-align: left">
-                <p><a href="about.html" style="text-decoration: none;color: white">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white">联系我们</a>|</p>
+                <p style="font-size: 1.7rem"><a href="about.html" style="text-decoration: none;color: white;padding-right: 8px" >关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white;padding: 0 8px">联系我们</a>|</p>
                 <h4 style="margin-top: 4rem">重庆万源佳药业有限公司</h4>
                 <p>重庆酉阳县板溪工业园2期A栋</p>
                 <p>tel:023-85067187  Fax:023-76580313</p>
@@ -221,7 +246,7 @@
     <div class="container foot2" style="display: none" >
         <div class="row" >
             <div class="col-md-4 col-xs-9" style="text-align: left;line-height: 10px">
-                <p><a href="about.html" style="text-decoration: none;color: white">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white">联系我们</a>|</p>
+                <p><a href="about.html" style="text-decoration: none;color: white;padding-right:8px">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white;padding:0 8px">联系我们</a>|</p>
                 <p style="margin-top: 20px"> ©重庆万源佳药业有限公司所有</p>
                 <p>版权未经许可不得转载或链接http://wyjyy.com/</p>
                 <p>隐私政策</p>
@@ -272,11 +297,21 @@
             $(".txx").css("padding","2rem  2rem")
             $(".foot1").css("display","none")
             $(".foot2").css({"display":"block","padding":" 0 15px"})
+            $(".s2").css({"display":"block","margin-top":"3rem"})
+            $(".b1").css("display"," none ")
+            $(".b2").css({"display":"block"})
         } else {
             console.log(("电脑"))
         }
     }
     ddd()
+
+    $(".imhg").click(function () {
+        $(".fangda").css("display","block")
+    })
+    $(".fangda").click(function () {
+        $(".fangda").css("display","none")
+    })
 </script>
 </body>
 </html>

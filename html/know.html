@@ -40,23 +40,28 @@
 
         .navbar-toggle{
             background-color: #009688;
-            margin-right: 8px;
+            margin-right: 0px;
             margin-left: 12px;
-            padding: 8px 3px;
+            padding: 5px 1px;
         }
         .navbar-toggle .icon-bar{
             background-color: white;
+            width: 20px;
         }
         .navbar-collapse{
             padding: 0;
         }
+
+        .breadcrumb>li+li:before{
+            content: "";
+        }
     </style>
 </head>
-<body>
+<body >
 
 
 
-<nav class="navbar  navphone"  style="display: none" >
+<nav class="navbar  navphone navbar-fixed-top"  style="display: none;background-color: white" >
 
     <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -85,7 +90,7 @@
 
 </nav>
 
-<div class="container topnav" >
+<div class="container topnav" style=";background-color: white">
     <!--    头部-->
     <header  class="center-block">
         <img  src="../images/header.png" style="width: 45%" class="img-responsive top" alt="Responsive image"></img>
@@ -99,8 +104,8 @@
 
 
     <!--导航条-->
-    <ul class="nav nav-pills">
-        <li style="margin-right:60px "><a href="../index.html" >首页</a></li>
+    <ul class="nav nav-pills" style="margin-left: 80px">
+        <li style="margin-right:40px "><a href="../index.html" >首页</a></li>
         <li  ><a href="about.html">关于我们</a></li>
         <li ><a href="shoplist.html">产品系列</a></li>
         <li class="active"><a href="know.html">认识酵素</a></li>
@@ -109,22 +114,26 @@
     </ul>
 </div>
 
+<ol class="breadcrumb foot2" style="text-align: left;background-color:#F1F2EC;padding-top: 40px;padding-left: 0;margin-bottom: 0;display: none;margin-top: 3rem" >
+    <li><a class="bb active" style="text-decoration: none;color: #C6A97D" >当前位置<text style="margin-left: 10px">/首页</text>  </a></li>
+    <li><a href="about.html"  class="bb" style="text-decoration: none;color: black">  >认识酵素</a></li>
+</ol>
 
 <img src="../images/banner2.jpg" class="img-responsive" style="width: 100%">
 
+<div class="btsss" style="background-color: #F1F2EC ">
+<div class="container dd" style="padding-bottom: 20rem">
+    <div class="row n1" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
 
-<div class="container" style="padding-bottom: 20rem">
-    <div class="row" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
-
-        <div class="col-md-4 col-xs-4">
+        <div class="col-md-4 col-xs-4 t1" style="padding:  40px 20px 20px">
             <a  href="what.html" class="thumbnail">
                 <img src="../images/2.png" alt="...">
             </a>
         </div>
-         <div class="col-md-8 col-xs-8" style="text-align: left;">
+         <div class="col-md-8 col-xs-8 w1" style="text-align: left;padding-top: 20px">
              <a href="what.html"  style=" text-decoration:none">
              <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0"  class="hh1">什么是酵素？</h2>
-             <p style="line-height: 3rem" class="p1">酵素是由氨基组成的具有特殊生物活性的物质，也称为酶，是一种生物催化剂，它存在于所有活动的动、
+             <p style="line-height: 3rem;color: black" class="p1">酵素是由氨基组成的具有特殊生物活性的物质，也称为酶，是一种生物催化剂，它存在于所有活动的动、
                  植物和微生物体内，是维持机体正常功能，消化食物，修复组织等生命活动的一种必要物质。几乎参与
                  所有生命过程，甚至是大脑的思考，自然界的生命衍繁息，肉眼不可见的酵素，正是这一切幕后的导演和编剧。</p>
              </a>
@@ -133,18 +142,18 @@
     </div>
 
 
-    <div class="row" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
+    <div class="row n1" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
 
-        <div class="col-md-4 col-xs-4">
+        <div class="col-md-4 col-xs-4 t1" style="padding: 40px 20px 20px">
             <a href="can.html" class="thumbnail">
                 <img src="../images/4.png" alt="...">
             </a>
         </div>
-        <div class="col-md-8 col-xs-8" style="text-align: left;">
+        <div class="col-md-8 col-xs-8 w1" style="text-align: left;padding-top: 20px">
             <a href="can.html"  style=" text-decoration:none">
             <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0" class="hh1">如何选择酵素好坏？</h2>
-            <p style="line-height: 3rem" class="p1">国内食用酵素的人群越来越多。但市场上的酵素品种繁多，品质也参差不齐。究竟什么样的酵素才是好酵素？
-                有哪些标准可以作为选择的依据呢？
+            <p style="line-height: 3rem;color: black" class="p1">国内食用酵素的人群越来越多。但市场上的酵素品种繁多，品质也参差不齐。究竟什么样的酵素才是好酵素？
+                有哪些标准可以作为选择的依据呢？</br>
                 1、正常人体大约有4000-5000种酵素，对于人体补充酵素来说，多种原料能满足更多需求。佳联酵素精选当季</p>
             </a>
         </div>
@@ -152,17 +161,17 @@
     </div>
 
 
-    <div class="row" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
+    <div class="row n1" style="align-items: center;justify-content: center;border-bottom: 1px solid grey;padding-bottom: 3rem" >
 
-        <div class="col-md-4 col-xs-4">
+        <div class="col-md-4 col-xs-4 t1" style="padding:  40px 20px 20px">
             <a href="why.html" class="thumbnail">
                 <img src="../images/3.png" alt="...">
             </a>
         </div>
-        <div class="col-md-8 col-xs-8" style="text-align: left;">
+        <div class="col-md-8 col-xs-8 w1" style="text-align: left;padding-top: 20px">
             <a href="why.html"  style=" text-decoration:none">
             <h2 style="color: #9F6002 ;font-weight: bolder;margin: 6rem 0 2rem 0 " class="hh1">为什么选择万源佳？</h2>
-            <p style="line-height: 3rem"  class="p1">万源佳酵素的独到之处，在于采集酉阳山区珍稀的野生猕猴桃、刺梨、桑葚……等为发酵原材。天生地养的纯净野果
+            <p style="line-height: 3rem;color: black"  class="p1" >万源佳酵素的独到之处，在于采集酉阳山区珍稀的野生猕猴桃、刺梨、桑葚……等为发酵原材。天生地养的纯净野果
                 ，风味纯正/养分无减/品性不变。无农残、无污染，方可放心全果利用，充分吸纳原材茎、叶、皮的稀有养分。
                 发酵熟成后，核心活性成分——SOD(超氧歧化酶)含量远高于普通果蔬发酵产品。</p>
             </a>
@@ -170,7 +179,11 @@
 
     </div>
 </div>
+</div>
 
+<div class="fangda" style="position: fixed;background-color: black;opacity: 0.9;top: 0;bottom: 0;right: 0;left: 0;z-index: 100;display: none">
+    <img src="../images/二维码.jpg" width="150px" style="margin: 20%">
+</div>
 
 
 <!--底部-->
@@ -178,7 +191,7 @@
     <div class="container foot1">
         <div class="row">
             <div class="col-md-4 col-xs-5" style="text-align: left">
-                <p><a href="about.html" style="text-decoration: none;color: white">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white">联系我们</a>|</p>
+                <p style="font-size: 1.7rem"><a href="about.html" style="text-decoration: none;color: white;padding-right: 8px" >关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white;padding: 0 8px">联系我们</a>|</p>
                 <h4 style="margin-top: 4rem">重庆万源佳药业有限公司</h4>
                 <p>重庆酉阳县板溪工业园2期A栋</p>
                 <p>tel:023-85067187  Fax:023-76580313</p>
@@ -204,7 +217,7 @@
     <div class="container foot2" style="display: none" >
         <div class="row" >
             <div class="col-md-4 col-xs-9" style="text-align: left;line-height: 10px">
-                <p><a href="about.html" style="text-decoration: none;color: white">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white">联系我们</a>|</p>
+                <p><a href="about.html" style="text-decoration: none;color: white;padding-right:8px">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white;padding:0 8px">联系我们</a>|</p>
                 <p style="margin-top: 20px"> ©重庆万源佳药业有限公司所有</p>
                 <p>版权未经许可不得转载或链接http://wyjyy.com/</p>
                 <p>隐私政策</p>
@@ -252,14 +265,25 @@
             $(".navphone").css("display","block")
             $(".topnav").css("display","none")
             $(".hh1").css({"margin":"20px 0 10px 0","font-size":"1px"})
-            $(".p1").css({"line-height":"20px","font-size":"10px","height":"55px",'overflow':"hidden"})
+            $(".p1").css({"line-height":"20px","font-size":"10px","height":"40px",'overflow':"hidden"})
             $(".foot1").css("display","none")
             $(".foot2").css("display","block")
+            $(".n1").css({"padding-bottom":" 1rem"})
+            $(".t1").css({"padding-top":" 20px"})
+            $(".w1").css({"padding-top":" 10px"})
+            $(".dd").css({"padding-bottom":" 6rem"})
         } else {
             console.log(("电脑"))
         }
     }
     ddd()
+
+    $(".imhg").click(function () {
+        $(".fangda").css("display","block")
+    })
+    $(".fangda").click(function () {
+        $(".fangda").css("display","none")
+    })
 </script>
 </body>
 </html>

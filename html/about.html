@@ -39,22 +39,27 @@
 
         .navbar-toggle{
             background-color: #009688;
-            margin-right: 8px;
+            margin-right: 0px;
             margin-left: 12px;
-            padding: 8px 3px;
+            padding: 5px 1px;
         }
         .navbar-toggle .icon-bar{
             background-color: white;
+            width: 20px;
         }
         .navbar-collapse{
             padding: 0;
+        }
+
+        .breadcrumb>li+li:before{
+            content: "";
         }
 
     </style>
 </head>
 <body>
 
-<nav class="navbar  navphone"  style="display: none" >
+<nav class="navbar  navphone navbar-fixed-top"  style="display: none;background-color: white" >
 
     <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -94,8 +99,8 @@
 
 
     <!--导航条-->
-    <ul class="nav nav-pills">
-        <li style="margin-right:60px "><a href="../index.html" >首页</a></li>
+    <ul class="nav nav-pills" style="margin-left: 80px">
+        <li style="margin-right:40px "><a href="../index.html" >首页</a></li>
         <li  class="active" ><a href="about.html">关于我们</a></li>
         <li ><a href="shoplist.html">产品系列</a></li>
         <li><a href="know.html">认识酵素</a></li>
@@ -104,20 +109,25 @@
     </ul>
 </div>
 
+<ol class="breadcrumb s2" style="text-align: left;background-color:#F1F2EC;padding-top: 40px;padding-left: 0;margin-bottom: 0;display: none">
+    <li><a class="bb active" style="text-decoration: none;color: #C6A97D" >当前位置<text style="margin-left: 10px">/首页</text>  </a></li>
+    <li><a href="about.html"  class="bb" style="text-decoration: none;color: black">  >关于我们</a></li>
+</ol>
 
-<img src="../images/banner1.jpg" class="img-responsive" style="width: 100%">
 
+<img src="../images/banner1.jpg" class="img-responsive s1" style="width: 100%">
+<img src="../images/素材11（2）.jpg" class="img-responsive b2" style="width: 100%;display: none">
 
 <div class="container">
     <div style="text-align: left;">
         <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0" class="t2e">重庆万源佳药业有限公司</h2>
-        <p style="line-height: 3rem">成立于2014年，是一家集研发、种植、生产加工、销售为一体的综合性现代化企业，主要生产药食同源酵素等系列产品。<br>
-            公司先后被评为：重庆市林业产业化龙头企业、农业产业化市级龙头企业、精准扶贫先进单位。<br>
-            公司坐落于重庆酉阳板溪工业园区，毗邻国家5A级景区桃花源，拥有核心基地10000余亩。得天独厚的地理位置孕育出物产丰富的野生资源为公司生产高品质养生品提供了物质保障。<br>
-            公司深入挖掘当地的野生、生态资源优势，用传统中药养身理论结合现代生物发酵技术，生产出酵素系列养生产品，并在市场取得了良好的反响。<br>
-            从田间地头，到科研院所，再到工厂。围绕大健康产业，万源佳建立起农/产/研三位一体的产业体系。与山区人民一道，探索惠农发展的可持续模式，以“源善养生”为理念，助力国人健康!<br>
-            公司理念——药食同源/源膳养生<br>
-            企业使命——源梦大健康/打造中国酵素民族品牌
+        <p style="line-height: 3rem" class="ttt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成立于2014年，是一家集研发、种植、生产加工、销售为一体的综合性现代化企业，主要生产药食同源酵素等系列产品。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司先后被评为：重庆市林业产业化龙头企业、农业产业化市级龙头企业、精准扶贫先进单位。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司坐落于重庆酉阳板溪工业园区，毗邻国家5A级景区桃花源，拥有核心基地10000余亩。得天独厚的地理位置孕育出物产丰富的野生资源为公司生产高品质养生品提供了物质保障。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司深入挖掘当地的野生、生态资源优势，用传统中药养身理论结合现代生物发酵技术，生产出酵素系列养生产品，并在市场取得了良好的反响。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从田间地头，到科研院所，再到工厂。围绕大健康产业，万源佳建立起农/产/研三位一体的产业体系。与山区人民一道，探索惠农发展的可持续模式，以“源善养生”为理念，助力国人健康!<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司理念——药食同源/源膳养生<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业使命——源梦大健康/打造中国酵素民族品牌
         </p>
     </div>
 
@@ -142,13 +152,24 @@
 <!--                </a>-->
 <!--            </div>-->
 <!--        </div>-->
-        <img src="../images/sort.png" class="img-responsive" alt="Responsive image" style="width: 100%">
+        <img src="../images/sort.png" class="img-responsive b1" alt="Responsive image" style="width: 100%">
+        <div class="b2" style="display: none">
+            <img src="../images/certificate.png" alt="" width="100%">
+            <img src="../images/z1.png" alt="" width="100%">
+            <img src="../images/z2.png" alt="" width="100%">
+        </div>
+
     </div>
 
 
     <div style="text-align: left;">
         <h2 style="font-weight: bolder;color: #9F6002;margin: 5rem 0 2rem 0" class="t2e">公司资质</h2>
-        <img src="../images/sort1.png" class="img-responsive" alt="Responsive image" style="width: 100%">
+        <img src="../images/sort1.png" class="img-responsive b1" alt="Responsive image" style="width: 100%">
+        <div class="b2" style="display: none">
+            <img src="../images/ty1.png" alt="" width="100%">
+            <img src="../images/ty2.png" alt="" width="100%">
+            <img src="../images/ty3.png" alt="" width="100%">
+        </div>
     </div>
 
 
@@ -168,13 +189,17 @@
     </div>
 </div>
 
+<div class="fangda" style="position: fixed;background-color: black;opacity: 0.9;top: 0;bottom: 0;right: 0;left: 0;z-index: 100;display: none">
+    <img src="../images/二维码.jpg" width="150px" style="margin: 20%">
+</div>
+
 
 <!--底部-->
 <div class="foot" style="background-color: black;color: white;padding-top: 30px;padding-bottom: 30px">
     <div class="container foot1">
         <div class="row">
             <div class="col-md-4 col-xs-5" style="text-align: left">
-                <p><a href="about.html" style="text-decoration: none;color: white">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white">联系我们</a>|</p>
+                <p style="font-size: 1.7rem"><a href="about.html" style="text-decoration: none;color: white;padding-right: 8px" >关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white;padding: 0 8px">联系我们</a>|</p>
                 <h4 style="margin-top: 4rem">重庆万源佳药业有限公司</h4>
                 <p>重庆酉阳县板溪工业园2期A栋</p>
                 <p>tel:023-85067187  Fax:023-76580313</p>
@@ -186,7 +211,7 @@
             </div>
 
             <div class="col-md-4 col-xs-5" style="text-align: right">
-                <p> ©重庆万源佳药业有限公司所有</p>
+                <p> ©2019重庆万源佳药业有限公司所有</p>
                 <p>版权未经许可不得转载或链接</p>
                 <p>http://wyjyy.com/</p>
                 <p>渝ICP备14052891号B</p>
@@ -200,8 +225,8 @@
     <div class="container foot2" style="display: none" >
         <div class="row" >
             <div class="col-md-4 col-xs-9" style="text-align: left;line-height: 10px">
-                <p><a href="about.html" style="text-decoration: none;color: white">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white">联系我们</a>|</p>
-                <p style="margin-top: 20px"> ©重庆万源佳药业有限公司所有</p>
+                <p><a href="about.html" style="text-decoration: none;color: white;padding-right:8px">关于我们</a>|<a href="contact.html" style="text-decoration: none;color: white;padding:0 8px">联系我们</a>|</p>
+                <p style="margin-top: 20px"> ©2019重庆万源佳药业有限公司所有</p>
                 <p>版权未经许可不得转载或链接http://wyjyy.com/</p>
                 <p>隐私政策</p>
                 <p>渝ICP备14052891号B</p>
@@ -250,11 +275,23 @@
             $(".t2e").css({"font-size":" 1.5rem","margin":"3rem 0 1rem 0"})
             $(".foot1").css("display","none")
             $(".foot2").css("display","block")
+            $(".s1").css("display"," none ")
+            $(".s2").css({"display":"block","margin-top":"3rem"})
+            $(".ttt").css("line-height"," 2.5rem")
+            $(".b1").css("display"," none ")
+            $(".b2").css({"display":"block"})
         } else {
             console.log(("电脑"))
         }
     }
     ddd()
+
+    $(".imhg").click(function () {
+        $(".fangda").css("display","block")
+    })
+    $(".fangda").click(function () {
+        $(".fangda").css("display","none")
+    })
 </script>
 </body>
 </html>
