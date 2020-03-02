@@ -51,6 +51,10 @@
         .navbar-collapse{
             padding: 0;
         }
+
+        .breadcrumb>li+li:before{
+            content: ">";
+        }
     </style>
 </head>
 <body>
@@ -108,8 +112,8 @@
 
 
 <ol class="breadcrumb s2" style="text-align: left;background-color:#F1F2EC;padding-top: 40px;padding-left: 0;margin-bottom: 0;display: none">
-    <li><a class="bb active" style="text-decoration: none;color: #C6A97D" >当前位置<text style="margin-left: 10px">/首页</text>  </a></li>
-    <li><a href="about.html"  class="bb" style="text-decoration: none;color: black">  >关于我们</a></li>
+    <li><text class="bb active" style="text-decoration: none;color: #C6A97D;padding-left: 10px" >当前位置<text style="padding: 0 5px 0 10px">/</text> <a href="../index.html" style="color:#C6A97D">首页</a></text></li>
+    <li><a href="about.html"  class="bb" style="text-decoration: underline;color: black">  关于我们</a></li>
 </ol>
 
 <img src="../images/联系我们/素材51-2.jpg" class="img-responsive  foot1" style="width: 100%">
@@ -117,7 +121,7 @@
 
 
 
-<div class="container" style="flex: 1;padding: 5rem 0;">
+<div class="container fg" style="flex: 1;padding: 5rem 0;">
     <div style="text-align: left;margin-left: 40%" class="foot1">
 
     <h2>重庆万源佳药业有限公司</h2>
@@ -237,6 +241,7 @@
             $(".foot2").css("display","block")
             $(".ttt").css("margin-left","2%")
             $(".s2").css({"display":"block","margin-top":"3rem"})
+            $(".fg").css("padding","1rem 0")
         } else {
             console.log(("电脑"))
         }

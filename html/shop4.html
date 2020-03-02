@@ -58,7 +58,7 @@
         }
 
         .breadcrumb>li+li:before{
-            content: "";
+            content: ">";
         }
     </style>
 </head>
@@ -122,9 +122,9 @@
         <div>
             <ol class="breadcrumb"
                 style="text-align: left;background-color:#F1F2EC;padding-top: 30px;padding-left: 0;margin-bottom: 10px ">
-                <li><a class="bb active" style="text-decoration: none;color: #C6A97D">当前位置 </a></li>
-                <li><a href="shoplist.html" class="bb active" style="text-decoration: none;color: #C6A97D"> 首页>  产品系列 </a></li>
-                <li class="active"><a href="" class="bb" style="text-decoration: none;color: black"> >  5+2焕形酵素</a></li>
+                <li><text class="bb active" style="text-decoration: none;color: #C6A97D;padding-left: 10px" >当前位置<text style="padding: 0 5px 0 10px">/</text> <a href="../index.html" style="color:#C6A97D">首页</a></text></li>
+                <li><a href="shoplist.html" class="bb active" style="text-decoration: none;color: #C6A97D">  产品系列 </a></li>
+                <li class="active"><a href="" class="bb" style="text-decoration: none;color: black">   5+2焕形酵素</a></li>
             </ol>
         </div>
 
@@ -176,7 +176,7 @@
                 <div style="text-align: left;position: relative">
                     <div class="t1">
                         <h3 style="font-weight: bolder;margin-top: 0";>5+2焕形酵素 |轻食营养酵素|</h3>
-                        <p style="font-weight: bolder">零售价：<text style="font-size: 2rem;color: red"> <span style="font-weight: normal;font-size: 2.5rem">￥</span>533.00</text></p>
+                        <p style="font-weight: bolder"><text class="hgg">零售价：</text><text style="font-size: 2rem;color: red"> <span style="font-weight: normal;font-size: 2.5rem">￥</span>533.00</text></p>
                         <div style="font-weight: bolder;display: flex;align-items: center;margin-top: 1rem">会员价：<div style="color: #C6A97D ">成为会员后可见</div> </div>
                         <div style="font-weight: bolder;display: flex;align-items: center;margin-top: 1rem">会员价：<div style="color: #C6A97D ">成为会员后可见</div> </div>
                     </div>
@@ -426,6 +426,7 @@
             $(".foot2").css({"display":"block","padding":" 0 15px"})
             $(".ct").css("margin-top","5rem")
             $(".breadcrumb").css({"margin-bottom":"0","padding-top":" 20px"})
+            $(".hgg").css({"font-weight": "bolder","font-size":"14px"})
         } else {
             console.log(("电脑"))
         }

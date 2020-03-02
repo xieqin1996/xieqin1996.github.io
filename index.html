@@ -9,6 +9,9 @@
     <title>重庆万源佳药业有限公司</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <style>
+
+        *{margin:0;padding:0;}
+
 a{
     text-decoration:none
 }
@@ -57,10 +60,15 @@ a{
     </style>
 </head>
 <body>
+<!--<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; BACKGROUND-COLOR: #fcf8e1; HEIGHT: 48px; COLOR: #ff9900; FONT-SIZE: 16px; OVERFLOW: hidden">-->
+<!--    你使用的浏览器版本过低，推荐使用新浏览器：-->
+<!--    <A style="COLOR: #ff9900; FONT-WEIGHT: bold" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target=_blank>IE9+</A>，-->
+<!--    <A style="COLOR: #ff9900; FONT-WEIGHT: bold" href="http://www.google.com/intl/zh-CN/chrome/" target=_blank>谷歌浏览器</A>，-->
+<!--    <A style="COLOR: #ff9900; FONT-WEIGHT: bold" href="http://www.firefox.com.cn/" target=_blank>火狐</A>。-->
+<!--</DIV>-->
 
 
-
-    <nav class="navbar  navphone navbar-fixed-top"  style="display: none;background-color: white" >
+<nav class="navbar  navphone navbar-fixed-top"  style="display: none;background-color: white" >
 
     <div class=" container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -389,6 +397,30 @@ a{
     $(".fangda").click(function () {
         $(".fangda").css("display","none")
     })
+
+    function GetBrowserType(){
+        var u_agent = navigator.userAgent;
+        var browser_name='Failed to identify the browser';
+        if(u_agent.indexOf('Firefox')>-1){
+            browser_name='Firefox';
+        }else if(u_agent.indexOf('Chrome')>-1){
+            browser_name='Chrome';
+        }else if(u_agent.indexOf('Trident')>-1&&u_agent.indexOf('rv:11')>-1){
+            browser_name='IE11';
+        }else if(u_agent.indexOf('MSIE')>-1&&u_agent.indexOf('Trident')>-1){
+            browser_name='IE(8-10)';
+        }else if(u_agent.indexOf('MSIE')>-1){
+            browser_name='IE(6-7)';
+        }else if(u_agent.indexOf('Opera')>-1){
+            browser_name='Opera';
+        }else{
+            browser_name+=',info:'+u_agent;
+        }
+        //通过chrome控制台输出日志
+        console.log('browser_name:'+browser_name+'<br>');
+        console.log('u_agent:'+u_agent+'<br>');
+    }
+    GetBrowserType()
 </script>
 </body>
 </html>
